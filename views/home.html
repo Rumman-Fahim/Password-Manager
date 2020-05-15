@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Home Page</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Firebase Links -->
+    <script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-database.js"></script>
+    <!-- Font Awesome Link -->
+    <script src="https://kit.fontawesome.com/11b8901115.js"></script>
+    <!-- CSS Link -->
+    <link rel="stylesheet" href="../style/home.css">
+</head>
+
+<body>
+    <h1>Welcome !</h1>
+
+    <div id="password_Container">
+
+    </div>
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="close">&times;</span>
+                <h2>Edit Password</h2>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="formBox">
+                        <label>Service Name </label>
+                        <input type="text" id="modal_serviceName" value="">
+                    </div>
+                    <div class="formBox">
+                        <label>Username or E-mail </label>
+                        <input type="text" id="modal_usernameEmail" value="">
+                    </div>
+                    <div class="formBox">
+                        <label>Password </label>
+                        <input type="text" id="modal_Password" value="">
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button id="btn_saveEditedPassword">Save</button>
+                <button id="btn_discard">Discard</button>
+            </div>
+        </div>
+    </div>>
+
+
+    <button id="btn_addNewPassword">add password</button>
+    <div id="passwords"></div>
+    <!-- ------------------------------------------------------ Log out -->
+    <button id="btn_SignOut">logout</button>
+
+    <!-- ------------------------------------------------------ JS script -->
+    <script type="module">
+        require("../js/home.js");
+    </script>
+</body>
+
+</html>

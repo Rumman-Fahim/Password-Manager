@@ -1,0 +1,40 @@
+.btn_box {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.btn {
+	width: 135px;
+	height: 25px;
+	border: 3px solid purple;
+	background-color: white;
+	border-radius: 25px;
+	color: purple;
+	letter-spacing: 2px;
+	outline: none !important;
+	text-shadow: 0;
+	transition: all 0.25s ease;
+	float: left;
+	margin-left: 100px;
+}
+
+.rotate {
+	width: 25px;
+	border-color: #bbb;
+	border-width: 4px;
+	font-size: 0;
+	outline: none;
+	border-left-color: purple;
+	animation: rotating 2s 0.25s linear infinite;
+}
+
+@keyframes rotating {
+	from {
+		transform: rotate(0deg);
+	}
+
+	to {
+		transform: rotate(360deg);
+	}
+}

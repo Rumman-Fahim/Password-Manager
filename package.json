@@ -1,0 +1,19 @@
+{
+  "name": "password-manager",
+  "version": "0.0.1",
+  "description": "Password manager for user's services",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "author": "Rumman Fahim",
+  "license": "MIT",
+  "dependencies": {
+    "electron": "^8.2.5",
+    "firebase": "^7.14.2",
+    "firebase-admin": "^8.11.0"
+  },
+  "devDependencies": {
+    "electron-reload": "^1.5.0"
+  }
+}
